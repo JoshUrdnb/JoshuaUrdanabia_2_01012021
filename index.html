@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <linl rel="stylesheet" media="screen and (max-width: 1280px)" href="media.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5e5575031f.js" crossorigin="anonymous"></script>
+    <title>Reservia - Vos vacances de rêve !</title>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <!--HEADER-->
+        <header>
+            <img class="logo" src="images/logo/Reservia.svg" alt="Reservia">
+            <nav>
+                <ul class="nav__links">
+                    <li><a class="hostings" href="#hostings" alt="hébergments" data-active="true">Hébergements</a></li>
+                    <li><a class="activities" href="#activities" alt="activités" data-active="false">Activités</a></li>
+                </ul>
+            </nav>
+            <a class="sign__up" href="#join_us" alt="S'inscrire">S'inscrire</a>
+        </header>
+        <!--HEADER-->
+
+        <main>
+            <!--SECTION--SEARCH-->
+            <div class="section__header">
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+
+            <div class="searchbar">
+                <form method="post" action="traitement.php">
+                    <button><i class="fas fa-map-marker-alt"></i></button>
+                    <input type="search" name="search" placeholder="Marseille, France" />
+                    <input type="submit" value="Rechercher" />
+                </form>
+            </div>
+
+            <div class="nav__filters">
+                <h2>Filtres</h2>
+                <ul class="filters">
+                    <li><button><i class="fas fa-money-bill-wave"></i><a class="discount" href="#discount" alt="Économique">Économique</a></li>
+                    <li><button><i class="fas fa-child"></i><a class="family" href="#family" alt="Familial">Familial</a></button></li>
+                    <li><button><i class="fas fa-heart"></i><a class="romance" href="#romance" alt="Romantique">Romantique</a></button></li>
+                    <li><button><i class="fas fa-dog"></i><a class="pets_friendly" href="#pets_friendly" alt="Animaux autorisés">Animaux autorisés</a></button></li>
+                </ul>
+            </div>
+
+            <div class="information">
+                <p><i class="fas fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
+            <!--SECTION--SEARCH-->
+
+            <!--SECTION--HOSTINGS-->
+            <!--SECTION--HOSTSING-->
+
+            <!--ASIDE--POPULAR-->
+            <!--ASIDE--POPULAR-->
+
+            <!--SECTION--ACTIVITIES-->
+            <!--SECTION--ACTIVITIES-->
+        </main>
+
+        <!--FOOTER-->
+        <footer>
+        </footer>
+        <!--FOOTER-->
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+*{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+background-color: #ffffff;
+font-family: 'Raleway', sans-serif;
+text-decoration: none;
+}
+
+#container{
+    width: 1280px;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    max-width: 1440px;
+    margin: auto;
+}
+
+a{
+    color: #0065FC;
+    transition: all 0.3s ease 0s;
+} 
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+/***NAVIGATION***/
+.nav__links{
+    list-style: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.hostings:hover{
+    border-top: 3px solid #0065FC;
+}
+
+a.hostings:active{
+    border-top: 3px solid #0065FC;
+}
+
+.activities:hover{
+    border-top: 3px solid #0065FC;
+}
+
+.activites:active{
+    border-top: 3px solid #0065FC;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 33px 20px 33px 20px;
+}
+
+.hostings{
+    padding: 33px 20px 33px 20px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover{
+    color: #0088a9;
+}
+
+a:hover{
+    color: #0065FC;
+}
+
+.sign__up{
+    margin-left: 30px ;
+}
+
+.sign__up{
+    font-weight: 800;
+}
+/***NAVIGATION***/
+
+
+
+/*** SEARCH ***/
+h1{
+    font-size: 2em;
+}
+
+.section__header{
+    justify-content: flex-start;
+    padding: 30px 10%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.searchbar{
+    justify-content: flex-start;
+    padding: 30px 10%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.filters{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 10%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.filters li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav__filters{
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 10%;
+    max-width: 1280px;
+    align-items: center;
+    margin: auto;
+}
+
+.information{
+    justify-content: flex-start;
+    padding: 30px 10%;
+    max-width: 1280px;
+    margin: auto;
+}
+/*** SEARCH ***/
