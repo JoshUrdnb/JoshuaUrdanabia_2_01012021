@@ -4,12 +4,11 @@ margin: 0px;
 padding: 0px;
 background-color: #ffffff;
 font-family: 'Raleway', sans-serif;
-text-decoration: none;
 }
 
 #container{
     margin: auto;
-    width: 1280px;
+    width: 1440  px;
 }
 
 .nav__header{
@@ -19,10 +18,15 @@ text-decoration: none;
     margin: auto;
 }
 
-a{
+.nav__links a{
     color: #0065FC;
     text-decoration: none;
-} 
+}
+
+.sign__up{
+    color: #0065FC;
+    text-decoration: none;
+}
 
 .logo{
     cursor: pointer;
@@ -31,6 +35,11 @@ a{
 }
 
 /***NAVIGATION***/
+.hostings{
+    border-top: 2px solid #0065FC;
+    padding: 50px 25px 30px 25px;
+}
+
 .activities:hover{
     border-top: 2px solid #0065FC;
 }
@@ -44,13 +53,8 @@ a{
     align-items: center;
 }
 
-.hostings{
-    border-top: 2px solid #0065FC;
-    padding: 44px 20px 30px 20px;
-}
-
 .activities{
-    padding: 44px 20px 30px 20px;
+    padding: 50px 25px 30px 25px;
 }
 
 .nav__links a:hover{
@@ -62,25 +66,21 @@ a:hover{
 }
 
 .sign__up{
-    margin-left: 30px ;
-    font-weight: 800;
+    font-weight: bold;
+    padding: 50px 25px 30px 25px;
 }
 /***NAVIGATION***/
 
 
 
 /*** TITRE ***/
-h1{
-    font-size: 30px;
-}
-
 .filters__h1{
     text-align: left;
 }
 
 .section__header{
     justify-content: flex-start;
-    padding: 10px 30px 0px 30px;
+    padding: 10px 0 0 0;
     margin: auto;
 }
 /*** TITRE ***/
@@ -91,7 +91,7 @@ h1{
 .box{
     justify-content: flex-start;
     display: inline-block;
-    padding: 30px 10px 10px 30px;
+    padding: 30px 0 0 0;
     margin: auto;
 }
 
@@ -104,13 +104,16 @@ h1{
 }
 
 input{
-    padding: 0 0 0px 10px;
-    margin: 0 0 0px -4px;
+    padding: 0 0 0 10px;
+    margin: 0 0 0 -4px;
     border: 1px solid #f2f2f2;
     position: relative;
     display: inline-block;
     height: 50px;
-    width: 240px; 
+    width: 240px;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
 }
 
 button.look{
@@ -129,27 +132,89 @@ button.look{
 
 
 /*** FILTRES ***/
-.nav__filters{
+.nav_filters{
     display: flex;
-    justify-content: flex-start;
-    margin: auto;
-}
-
-.filters__h1{
-    margin: auto;
+    align-items: center;
+    margin: 20px 0 0 0;
 }
 
 .filters{
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: auto;
+    margin: 0 0 0 30px;
 }
 
-.filters li{
-    display: inline-block;
-    padding: 30px 30px 30px 30px;
-    justify-content: flex-start;
+.FilterButton{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px 0 20px; /*espacement entre les filtres*/
+}
+
+.WrapIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #deebff;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: #deebff;
+    color: #0065FC;
+}
+
+.discount_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    width: 180px;
+    height: 50px;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 0 0 -50px;
+}
+
+.family_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 0 0 -50px;
+}
+
+.romance_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    width: 180px;
+    height: 50px;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 0 0 -50px;
+}
+
+.pets_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px;
+    width: 230px;
+    height: 50px;
+    background: transparent;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 0 0 -50px;
 }
 /*** FILTRES ***/
 
@@ -164,7 +229,7 @@ button.look{
     display: flex;
     align-items: center;
     margin: auto;
-    padding: 30px 10px 10px 30px
+    padding: 10px 0 10px 0;
 }
 
 .icon{
@@ -180,63 +245,16 @@ button.look{
 }
 /*** INFOS ***/
 
-/**********TTEESSTT***********/
-/**********TTEESSTT***********/
-.icon1{
-    color: #0065FC;
-    background-color: #deebff;
-    height: 50px;
-    width: 50px;
-    border: 0px solid #d9d9d9;
-    border-radius: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
-    display: flex;
-}
-
-.discount_button{
-    border: 3px solid #f2f2f2;
-    border-radius: 25px 25px 25px 25px;
-    width: 200px;
-    height: 50px;
-}
-
-.family_button{
-    border: 3px solid #f2f2f2;
-    border-radius: 25px 25px 25px 25px;
-    width: 200px;
-    height: 50px;
-}
-
-.romance_button{
-    border: 3px solid #f2f2f2;
-    border-radius: 25px 25px 25px 25px;
-    width: 200px;
-    height: 50px;
-}
-
-.pets_button{
-    border: 3px solid #f2f2f2;
-    border-radius: 25px 25px 25px 25px;
-    width: 200px;
-    height: 50px;
-}
-/**********TTEESSTT***********/
-/**********TTEESSTT***********/
 
 
-
-/*** HEBERGEMENTS ***/
+/*** HEBERGEMENTS **********************************/
 #hostings{
-    display: flex;
     flex-direction: row;
     width: 880px;
     height: 620px;
-    padding: 40px 0 0 30px;
+    padding: 20px 0 0 30px;
     background-color: #f2f2f2;
-    border-radius: 25px 25px 25px 25px;
-    margin: auto;
+    border-radius: 25px;
     float: left;
 }
 
@@ -245,16 +263,22 @@ button.look{
 }
 
 .card_container{
-    width: 240px;
+    width: 250px;
     height: 200px;
     border-radius: 25px;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 30px 30px 0px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.card{
+    text-decoration: none;
+    color: black;
 }
 
 .photo{
     width: 230px;
     height: 100px;
-    padding: 5px 5px 5px 5px;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
     width: 100%;
@@ -262,3 +286,103 @@ button.look{
     max-height: 100%;
 }
 /*** HEBERGEMENTS ***/
+
+
+
+/*** TEST ***/
+.euro{
+    font-weight: bold;
+}
+
+#stars{
+    display: flex;
+}
+
+.blue__stars{
+    color: #0065FC;
+}
+
+.grey__stars{
+    color: #d9d9d9;
+}
+
+.test{
+    display: flex;
+    flex-wrap: wrap;
+    background: none;
+}
+
+.hh3{
+    background: none;
+}
+
+.fas{
+    background: none;
+}
+/*** TEST ***/
+
+
+
+/*** POPULARS ***/
+#aside{
+    width: 400px;
+    height: 620px;
+    background-color: #f2f2f2;
+    border-radius: 25px;
+    float: right;
+    padding: 20px 5px 5px 30px;
+}
+
+.AsideTitleLine{
+    display: flex;
+    justify-content : space-between;
+    background: none;
+}
+
+.title_aside{
+    background: none;
+}
+
+.section_aside{
+    flex-direction : column;
+    background: none;
+}
+
+.card_aside{
+    width: 340px;
+    height: 140px;
+    border-radius: 25px;
+    margin: 20px 30px 30px 0px;
+    padding: 5px 5px 5px 5px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.card2{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    background: none;
+}
+
+.photo_aside{
+    width: 125px;
+    height: 140px;
+    border-radius: 25px 0 0 25px;
+    object-fit: cover;
+    width: 40%;
+    max-width: 40%;
+    max-height: 100%;
+}
+/*** POPULARS ***/
+
+
+
+/*** ACTIVITIES ***/
+#activities{
+    width: 300px;
+    height: 440px;
+    border: 1px solid black;
+    background-color: grey;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+/*** ACTIVITIES ***/
