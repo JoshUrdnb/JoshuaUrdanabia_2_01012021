@@ -2,7 +2,6 @@
 box-sizing: border-box;
 margin: 0px;
 padding: 0px;
-
 font-family: 'Raleway', sans-serif;
 }
 
@@ -83,6 +82,10 @@ a:hover{
     padding: 10px 0 0 0;
     margin: auto;
 }
+
+.title_size{
+    font-size: 24px;
+}
 /*** TITRE ***/
 
 
@@ -135,7 +138,7 @@ button.look{
 .nav_filters{
     display: flex;
     align-items: center;
-    margin: 20px 0 0 0;
+    margin: 30px 0 0 0;
 }
 
 .filters{
@@ -143,80 +146,75 @@ button.look{
     margin: 0 0 0 30px;
 }
 
-.FilterButton{
+.button_filter1{
     display: flex;
-    justify-content: space-around;
-    padding: 0 20px 0 20px; /*espacement entre les filtres*/
-}
-
-.WrapIcon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #deebff;
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    background-color: #deebff;
-    color: #0065FC;
-}
-
-.discount_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     border: 2px solid #d9d9d9;
-    border-radius: 25px;
+    border-radius: 25px; 
     width: 180px;
     height: 50px;
-    background: transparent;
     font-weight: bold;
     cursor: pointer;
-    margin: 0 0 0 -50px;
-}
+    margin: 0 20px 0 20px;
+  }
 
-.family_button{
+  .button_filter2{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     border: 2px solid #d9d9d9;
-    border-radius: 25px;
+    border-radius: 25px; 
     width: 150px;
     height: 50px;
-    background: transparent;
     font-weight: bold;
     cursor: pointer;
-    margin: 0 0 0 -50px;
-}
+    margin: 0 20px 0 20px;
+  }
 
-.romance_button{
+  .button_filter3{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
     border: 2px solid #d9d9d9;
-    border-radius: 25px;
+    border-radius: 25px; 
     width: 180px;
     height: 50px;
-    background: transparent;
     font-weight: bold;
     cursor: pointer;
-    margin: 0 0 0 -50px;
-}
+    margin: 0 20px 0 20px;
+  }
 
-.pets_button{
+  .button_filter4{
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #d9d9d9;
+    border-radius: 25px; 
+    width: 230px;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0 20px 0 20px;
+  }
+  
+  .icon_filter{
+    width : 100%;
+    background-color: #deebff;
+    margin: -2px 0 0 -2px;
+    width: 50px;
+    height: 50px;
+    color: #0065FC;
+    border-radius: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #d9d9d9;
-    border-radius: 25px;
-    width: 230px;
-    height: 50px;
-    background: transparent;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0 0 0 -50px;
-}
+  }
+
+  .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px 0 0;
+  }
 /*** FILTRES ***/
+
 
 
 /*** INFOS ***/
@@ -229,7 +227,7 @@ button.look{
     display: flex;
     align-items: center;
     margin: auto;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 10px 0;
 }
 
 .icon{
@@ -247,7 +245,7 @@ button.look{
 
 
 
-/*** HEBERGEMENTS **********************************/
+/*** HEBERGEMENTS ***/
 #hostings{
     flex-direction: row;
     width: 880px;
@@ -264,7 +262,7 @@ button.look{
     border-radius: 25px;
     margin: 20px 30px 30px 0px;
     padding: 5px 5px 5px 5px;
-    box-shadow: 1px 1px 1px 1px lightgray;
+    box-shadow: 0px 2px 30px 0px lightgray;
     background-color: white;
 }
 
@@ -282,6 +280,14 @@ button.look{
     max-width: 100%;
     max-height: 100%;
 }
+
+.order1{
+    padding: 5px 0 0 10px;
+}
+
+.space{
+    padding: 5px 0 0 0;
+}
 /*** HEBERGEMENTS ***/
 
 
@@ -293,6 +299,7 @@ button.look{
 
 #stars{
     display: flex;
+    padding: 10px 0 0 0;
 }
 
 .blue__stars{
@@ -336,7 +343,7 @@ button.look{
     border-radius: 25px;
     margin: 20px 30px 30px 0px;
     padding: 5px 5px 5px 5px;
-    box-shadow: 1px 1px 1px 1px lightgray;
+    box-shadow: 0px 2px 30px 0px lightgray;
     background: white;
 }
 
@@ -349,6 +356,7 @@ button.look{
 .order{
     display: flex;
     flex-direction : column;
+    padding: 10px 0 0 15px;
 }
 
 .photo_aside{
@@ -359,6 +367,7 @@ button.look{
     width: 40%;
     max-width: 40%;
     max-height: 100%;
+    padding: 0px 0px 10px 0px;
 }
 /*** POPULARS ***/
 
@@ -366,6 +375,11 @@ button.look{
 
 /*** ACTIVITIES ***/
 #activities{
+    width: 100%;
+}
+
+.title_activities{
+    margin: 30px 0 5px 0;
 }
 
 .activity{
@@ -376,12 +390,17 @@ button.look{
     flex-direction : column;
 }
 
+.act_h3{
+    padding: 15px 0 0 15px;
+}
+
 .port{
     width: 300px;
     height: 440px;
     border-radius: 25px;
-    box-shadow: 1px 1px 1px 1px lightgray;
+    box-shadow: 0px 2px 30px 0px lightgray;
     margin: 30px 0 0 0px;
+    cursor: pointer;
 }
 
 .photo_1{
@@ -398,8 +417,9 @@ button.look{
     width: 300px;
     height: 235px;
     border-radius: 25px;
-    box-shadow: 1px 1px 1px 1px lightgray;
+    box-shadow: 0px 2px 30px 0px lightgray;
     margin: 30px 0 0 40px;
+    cursor: pointer;
 }
 
 .photo_2{
@@ -414,15 +434,16 @@ button.look{
 
 .frioul{
     width: 300px;
-    height: 235px;
+    height: 165px;
     border-radius: 25px;
-    box-shadow: 1px 1px 1px 1px lightgray;
+    box-shadow: 0px 2px 30px 0px lightgray;
     margin: 30px 0 0 40px;
+    cursor: pointer;
 }
 
 .photo_3{
     width: 300px;
-    height: 175px;
+    height: 110px;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
     width: 100%;
@@ -434,8 +455,9 @@ button.look{
     width: 300px;
     height: 440px;
     border-radius: 25px;
-    box-shadow: 1px 1px 1px 1px lightgray;
+    box-shadow: 0px 2px 30px 0px lightgray;
     margin: 30px 0 0 40px;
+    cursor: pointer;
 }
 
 .photo_4{
@@ -452,8 +474,9 @@ button.look{
     width: 300px;
     height: 235px;
     border-radius: 25px;
-    box-shadow: 1px 1px 1px 1px lightgray;
+    box-shadow: 0px 2px 30px 0px lightgray;
     margin: 30px 0 0 40px;
+    cursor: pointer;
 }
 
 .photo_5{
@@ -468,15 +491,16 @@ button.look{
 
 .parc{
     width: 300px;
-    height: 235px;
+    height: 165px;
     border-radius: 25px;
-    box-shadow: 1px 1px 1px 1px lightgray;
+    box-shadow: 0px 2px 30px 0px lightgray;
     margin: 30px 0 0 40px;
+    cursor: pointer;
 }
 
 .photo_6{
     width: 300px;
-    height: 175px;
+    height: 110px;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
     width: 100%;
@@ -489,7 +513,7 @@ button.look{
 
 /*** FOOTER ***/
 #footer{
-    width: 1440px;
+    width: 100%;
     height: 250px;
     background: #f2f2f2;
     margin: 30px 0 0 0;
@@ -498,6 +522,7 @@ button.look{
 .columnwrapper{
     display: flex;
     justify-content : space-around;
+    margin-left: 5%;
 }
 
 .linkswrapper{
@@ -509,26 +534,9 @@ button.look{
 .footerlinks{
     text-decoration: none;
     color: black;
+    padding: 15px 0 0 0;
 }
 /*** FOOTER ***/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
