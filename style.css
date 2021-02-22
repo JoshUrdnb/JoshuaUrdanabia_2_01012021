@@ -521,7 +521,7 @@ button.look{
 
 .columnwrapper{
     display: flex;
-    justify-content : space-around;
+    justify-content: space-around;
     margin-left: 5%;
 }
 
@@ -535,6 +535,13 @@ button.look{
     text-decoration: none;
     color: black;
     padding: 15px 0 0 0;
+}
+
+.w3c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0 0 0;
 }
 /*** FOOTER ***/
 
