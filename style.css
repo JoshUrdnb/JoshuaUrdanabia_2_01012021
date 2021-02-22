@@ -101,7 +101,6 @@ a:hover{
 .map__icon{
     align-items: center;
     padding: 15px 25px;
-    border: 1px solid #f2f2f2;
     border-radius: 15px 0 0 15px;
     background-color: #f2f2f2;
 }
@@ -130,6 +129,13 @@ button.look{
     border: none;
     border-radius: 0 15px 15px 0;
 }
+
+/*
+.search_icon{
+    visibility: hidden;
+}
+*/
+
 /*** SEARCH ***/
 
 
@@ -297,7 +303,7 @@ button.look{
     font-weight: bold;
 }
 
-#stars{
+.stars{
     display: flex;
     padding: 10px 0 0 0;
 }
@@ -535,13 +541,6 @@ button.look{
     text-decoration: none;
     color: black;
     padding: 15px 0 0 0;
-}
-
-.w3c{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 35px 0 0 0;
 }
 /*** FOOTER ***/
 
