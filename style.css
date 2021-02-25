@@ -37,22 +37,28 @@ font-family: 'Raleway', sans-serif;
 }
 
 .links a{
-    color: #0065FC;
     text-decoration: none;
 }
 
 .hostings{
     border-top: 2px solid #0065FC;
     padding: 50px 25px 30px 25px;
+    color: #0065FC;
+}
+
+.hostings a{
+    color: #0065FC;
 }
 
 .activities{
     padding: 50px 25px 30px 25px;
     border-top: 2px transparent solid;
+    color: black;
 }
 
-.activities:hover{
+.activities:hover {
     border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 
 .sign_up{
