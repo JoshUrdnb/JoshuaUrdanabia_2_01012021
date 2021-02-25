@@ -7,24 +7,22 @@ font-family: 'Raleway', sans-serif;
 
 #container{
     margin: auto;
-    width: 1350px;
+    max-width: 1350px;
+    width: 95%;
 }
 
-.nav__header{
+#main_section{
+    display: flex;
+}
+
+
+
+/***NAVIGATION***/
+.header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin: auto;
-}
-
-.nav__links a{
-    color: #0065FC;
-    text-decoration: none;
-}
-
-.sign__up{
-    color: #0065FC;
-    text-decoration: none;
 }
 
 .logo{
@@ -33,38 +31,33 @@ font-family: 'Raleway', sans-serif;
     margin-top: 30px;
 }
 
-/***NAVIGATION***/
+.links{
+    display: flex;
+    align-items: center;
+}
+
+.links a{
+    color: #0065FC;
+    text-decoration: none;
+}
+
 .hostings{
     border-top: 2px solid #0065FC;
     padding: 50px 25px 30px 25px;
+}
+
+.activities{
+    padding: 50px 25px 30px 25px;
+    border-top: 2px transparent solid;
 }
 
 .activities:hover{
     border-top: 2px solid #0065FC;
 }
 
-.activites:active{
-    border-top: 2px solid #0065FC;
-}
-
-.nav__links{
-    display: flex;
-    align-items: center;
-}
-
-.activities{
-    padding: 50px 25px 30px 25px;
-}
-
-.nav__links a:hover{
-    color: #0065fc;
-}
-
-a:hover{
+.sign_up{
     color: #0065FC;
-}
-
-.sign__up{
+    text-decoration: none;
     font-weight: bold;
     padding: 50px 25px 30px 25px;
 }
@@ -77,7 +70,7 @@ a:hover{
     text-align: left;
 }
 
-.section__header{
+.section_header{
     justify-content: flex-start;
     padding: 10px 0 0 0;
     margin: auto;
@@ -91,7 +84,7 @@ a:hover{
 
 
 /*** SEARCH ***/
-.box{
+.SearchForm{
     justify-content: flex-start;
     display: inline-block;
     padding: 30px 0 0 0;
@@ -528,7 +521,7 @@ button.look{
 .columnwrapper{
     display: flex;
     justify-content: space-around;
-    margin-left: 5%;
+    margin-left: auto;
 }
 
 .linkswrapper{
@@ -543,9 +536,3 @@ button.look{
     padding: 15px 0 0 0;
 }
 /*** FOOTER ***/
-
-
-
-#main_section{
-    display: flex;
-}
