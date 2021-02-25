@@ -15,7 +15,10 @@ font-family: 'Raleway', sans-serif;
     display: flex;
 }
 
-
+article:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+}
 
 /***NAVIGATION***/
 .header{
@@ -545,5 +548,9 @@ button.look{
     text-decoration: none;
     color: black;
     padding: 15px 0 0 0;
+}
+
+.footerlinks:hover{
+    text-decoration: underline;
 }
 /*** FOOTER ***/
