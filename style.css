@@ -549,4 +549,8 @@ button.look{
     color: black;
     padding: 15px 0 0 0;
 }
+
+.footerlinks:hover{
+    text-decoration: underline;
+}
 /*** FOOTER ***/
