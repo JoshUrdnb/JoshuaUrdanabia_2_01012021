@@ -15,7 +15,10 @@ font-family: 'Raleway', sans-serif;
     display: flex;
 }
 
-
+article:hover{
+    transition: transform .2s;
+    transform: scale(1.1);
+}
 
 /***NAVIGATION***/
 .header{
