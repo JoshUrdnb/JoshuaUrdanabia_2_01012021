@@ -20,20 +20,20 @@
     <div id="container">
 
         <!--HEADER-->
-        <header class="nav__header">
+        <header class="header">
             <img class="logo" src="images/logo/Reservia.svg" alt="Reservia">
-            <nav class="nav__links">
+            <nav class="links">
                 <a class="hostings" href="#hostings" data-active="true">Hébergements</a>
                 <a class="activities" href="#activities" data-active="false">Activités</a>
             </nav>
-            <div class="sign"><a class="sign__up" href="#join_us">S'inscrire</a></div>
+                <a class="sign_up" href="#join_us">S'inscrire</a>
         </header>
         <!--HEADER-->
 
 
 
         <!--TITLE-->
-        <div class="section__header">
+        <div class="section_header">
             <h1 class="title_size">Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
@@ -42,11 +42,13 @@
 
 
         <!--SEARCH-->
-        <div class="box">
+        <div class="SearchForm">
             <form method="post" action="#">
-                <span class="map__icon"><i class="fas fa-map-marker-alt"></i></span>
+                <span type="none" class="map__icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </span>
                 <input type="search" name="search" placeholder="Marseille, France">
-                <button class="look">
+                <button class="look" type="submit">
                     <span class="searchtext">Rechercher</span>
                     <i class="search_icon fas fa-search"></i>
                 </button>
