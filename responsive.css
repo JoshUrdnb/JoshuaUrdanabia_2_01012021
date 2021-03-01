@@ -97,9 +97,8 @@ button.look{
 }
 
 @media screen and (min-width: 601px){
-    .searchIcon{
+    .search_icon{
     display: none;
-    display: block;
     }
   }
 /*SearchForm*/
