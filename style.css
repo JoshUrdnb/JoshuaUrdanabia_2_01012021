@@ -131,13 +131,6 @@ button.look{
     border: none;
     border-radius: 0 15px 15px 0;
 }
-
-/*
-.search_icon{
-    visibility: hidden;
-}
-*/
-
 /*** SEARCH ***/
 
 
@@ -537,7 +530,9 @@ button.look{
 .columnwrapper{
     display: flex;
     justify-content: space-around;
-    margin-left: auto;
+    margin: auto;
+    width: 100%;
+    max-width: 1350px;
 }
 
 .linkswrapper{
