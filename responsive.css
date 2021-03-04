@@ -1,15 +1,16 @@
 /*Container*/
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 320px) and (max-width: 768px){
 #container{
     width: 100%;
 }
+
 }
 /*Container*/
 
 
 
 /*Header*/
-@media only screen and (max-width: 600px)
+@media only screen and (min-width: 320px) and (max-width: 768px)
 {
 
 .header{
@@ -79,25 +80,25 @@
     width: 100%;
     }
 
-.searchtext{
+.SearchText{
     display: none;
-    }
+    }  
 
-button.look{
-    position: absolute;
+.SearchSubmit{
     background-color: #0065FC;
     color: white;
     font-size: 15px;
     font-weight: 800;
-    width: 60px;
+    width: 50px;
     height: 50px;
     border: none;
     border-radius: 15px;
+    margin: 0 0 0 -10px;
     }
 }
 
 @media screen and (min-width: 601px){
-    .search_icon{
+    .SearchMagnifyingIcon{
     display: none;
     }
   }
