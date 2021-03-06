@@ -20,6 +20,12 @@ article:hover{
     transform: scale(1.1);
 }
 
+.euro{
+    font-weight: bold;
+}
+
+
+
 /***NAVIGATION***/
 .header{
     display: flex;
@@ -115,8 +121,8 @@ article:hover{
 }
 
 ::placeholder{
-    color: black;
-    opacity: 1;
+    color: black; /* Chrome, Firefox, Opera, Safari 10.1+ */
+    opacity: 1; /* Firefox */
 }
 
 .POI{
@@ -219,7 +225,7 @@ article:hover{
     padding: 0 30px 0 0;
   }
 
-  .Hover:hover{
+  .FiltersHoverEffect:hover{
       transition: transform .3s;
       transform: scale(1.2);
   }
@@ -259,88 +265,103 @@ article:hover{
 #hostings{
     flex-direction: row;
     width: 880px;
-    height: 620px;
+    height: 625px;
     margin: 20px 0 0 0px;
-    padding: 20px 0 0 30px;
     background-color: #f2f2f2;
-    border-radius: 25px;
+    border-radius: 20px;
+}
+
+.HostingsTitle{
+    margin: 30px 0 0 40px;
+}
+
+.HostingsCardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 40px;
 }
 
 .card_container{
-    width: 250px;
+    width: 245px;
     height: 200px;
-    border-radius: 25px;
-    margin: 20px 30px 30px 0px;
-    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+    margin: 30px 30px 0 0;
+    padding: 5px;
     box-shadow: 0px 2px 30px 0px lightgray;
     background-color: white;
 }
 
-.card{
+.HostingsCard{
     text-decoration: none;
     color: black;
 }
 
-.photo{
-    width: 230px;
-    height: 100px;
-    border-radius: 25px 25px 0 0;
+.HostingsPicture{
+    width: 235px;
+    height: 112px;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     max-width: 100%;
     max-height: 100%;
 }
 
-.order1{
+.HostingsCardDescription{
     padding: 5px 0 0 10px;
 }
 
-.space{
+.HostingsCardTitle{
+    font-size: 1rem;
+}
+
+.HostingsCardText{
     padding: 5px 0 0 0;
+}
+
+.ShowMoreContainer{
+    margin: 45px 0 0 45px;
+}
+
+.ShowMoreText{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: black;
 }
 /*** HEBERGEMENTS ***/
 
 
 
-/*** TEST ***/
-.euro{
-    font-weight: bold;
-}
-
-.stars{
+/*** Stars ***/
+.Stars{
     display: flex;
-    padding: 10px 0 0 0;
+    padding: 5px 0 0 0;
 }
 
-.blue__stars{
+.BlueStars{
     color: #0065FC;
 }
 
-.grey__stars{
+.GreyStars{
     color: #d9d9d9;
 }
-/**********/
-.test{
-    display: flex;
-    flex-wrap: wrap;
-}
-/*** TEST ***/
+/*** Stars ***/
 
 
 
 /*** POPULARS ***/
 #aside{
-    width: 400px;
-    height: 620px;
+    width: 420px;
+    height: 625px;
     background-color: #f2f2f2;
-    border-radius: 25px;
+    border-radius: 20px;
     margin: 20px 0 0 40px;
-    padding: 20px 5px 5px 30px;
 }
 
 .AsideTitleLine{
     display: flex;
     justify-content : space-between;
+    margin: 30px 40px 0 35px;
 }
 
 .section_aside{
@@ -348,11 +369,11 @@ article:hover{
 }
 
 .card_aside{ 
-    width: 340px;
-    height: 140px;
-    border-radius: 25px;
-    margin: 20px 30px 30px 0px;
-    padding: 5px 5px 5px 5px;
+    width: 345px;
+    height: 145px;
+    border-radius: 20px;
+    margin: 30px 35px 30px 35px;
+    padding: 5px;
     box-shadow: 0px 2px 30px 0px lightgray;
     background: white;
 }
@@ -366,18 +387,20 @@ article:hover{
 .order{
     display: flex;
     flex-direction : column;
-    padding: 10px 0 0 15px;
+    padding: 10px 0 0 20px;
+}
+
+.PopularCardTitle{
+    font-size: 1rem;
 }
 
 .photo_aside{
     width: 125px;
-    height: 140px;
-    border-radius: 25px 0 0 25px;
+    height: 135px;
+    border-radius: 20px 0 0 20px;
     object-fit: cover;
-    width: 40%;
-    max-width: 40%;
+    max-width: 100%;
     max-height: 100%;
-    padding: 0px 0px 10px 0px;
 }
 /*** POPULARS ***/
 
@@ -409,7 +432,7 @@ article:hover{
 .port{
     width: 300px;
     height: 445px;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     margin: 0px 0 0 0px;
     cursor: pointer;
@@ -418,7 +441,7 @@ article:hover{
 .photo_1{
     width: 300px;
     height: 390px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     max-width: 100%;
@@ -428,7 +451,7 @@ article:hover{
 .fort{
     width: 300px;
     height: 235px;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     margin: 0px 0 0 40px;
     cursor: pointer;
@@ -437,7 +460,7 @@ article:hover{
 .photo_2{
     width: 300px;
     height: 175px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     max-width: 100%;
@@ -447,7 +470,7 @@ article:hover{
 .frioul{
     width: 300px;
     height: 165px;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     margin: 45px 0 0 40px;
     cursor: pointer;
@@ -456,7 +479,7 @@ article:hover{
 .photo_3{
     width: 300px;
     height: 110px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     max-width: 100%;
@@ -466,7 +489,7 @@ article:hover{
 .calanques{
     width: 300px;
     height: 445px;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     margin: 0px 0 0 40px;
     cursor: pointer;
@@ -475,7 +498,7 @@ article:hover{
 .photo_4{
     width: 300px;
     height: 390px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     max-width: 100%;
@@ -485,7 +508,7 @@ article:hover{
 .garde{
     width: 300px;
     height: 195px;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     margin: 0px 0 0 40px;
     cursor: pointer;
@@ -494,7 +517,7 @@ article:hover{
 .photo_5{
     width: 300px;
     height: 140px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     max-width: 100%;
@@ -504,7 +527,7 @@ article:hover{
 .parc{
     width: 300px;
     height: 210px;
-    border-radius: 25px;
+    border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     margin: 42px 0 0 40px;
     cursor: pointer;
@@ -513,7 +536,7 @@ article:hover{
 .photo_6{
     width: 300px;
     height: 153px;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     max-width: 100%;
