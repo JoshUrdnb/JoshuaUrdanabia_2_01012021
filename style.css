@@ -291,44 +291,9 @@ article:hover{
     border-radius: 20px;
 }
 
-.HostingsTitle{
-    grid-column: 1/4;
-    grid-row: 1/2;
-}
-
-.one{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-
-.two{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-
-.three{
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-
-.four{
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-
-.five{
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-
-.six{
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-
 .card_container{
     border-radius: 20px;
-    padding: 5px;
+    padding: 0.5rem;
     box-shadow: 0px 2px 30px 0px lightgray;
     background-color: white;
     align-content: stretch;
@@ -362,8 +327,7 @@ article:hover{
 }
 
 .ShowMoreText{
-    grid-column: 1/4;
-    grid-row: 4/5;
+
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -408,7 +372,7 @@ article:hover{
 
 .card_aside{
     border-radius: 20px;
-    padding: 5px;
+    padding: 0.5rem;
     box-shadow: 0px 2px 30px 0px lightgray;
     background: white;
     align-items: stretch;
@@ -443,12 +407,22 @@ article:hover{
 
 
 /*** ACTIVITIES ***/
+@media only screen and (min-width: 1024px){
 #activities{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 4rem 10rem 2rem 2rem 2rem 2rem 10rem;
     column-gap: 2rem;
     margin-top: 4rem;
+}
+}
+
+@media only screen and (max-width: 767px){
+    #activities{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 1rem;
+    }
 }
 
 .title_activities{
