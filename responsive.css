@@ -10,7 +10,7 @@
 
 
 /*Header*/
-@media only screen and (min-width: 320px) and (max-width: 768px)
+@media only screen and (min-width: 320px) and (max-width: 1024px)
 {
 
 .header{
@@ -60,20 +60,8 @@
 
 
 
-/*Title*/
-@media only screen and (max-width: 600px)
-{
-.title_size{
-    display: flex;
-    align-items: center;
-}
-}
-/*Title*/
-
-
-
 /*SearchForm*/
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 768px)
 {
 
 .SearchForm{
@@ -97,7 +85,7 @@
     }
 }
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 768px){
     .SearchMagnifyingIcon{
     display: none;
     }
@@ -106,204 +94,109 @@
 
 
 
-/*Filters*/
-@media only screen and (max-width: 600px){
-.nav_filters{
-    display: flex;
-    flex-direction : column;
-}
-
-.filters_h1{
-    width: 100%;
-    margin: 0 0 20px 20px;
-}
-
-.filters{
-    display: flex;
-    flex-wrap: wrap;
-}
+ /*Filters*/
+@media only screen and (min-width: 320px) and (max-width: 1004px){
+    .nav_filters{
+        display: flex;
+        flex-direction : column;
+    }
+    
+    .filters_h1{
+        width: 100%;
+    }
 }
 /*Filters*/
 
 
 
 /*Main*/
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 768px)
 {
-    #main_section{
-        display: flex;
-        flex-direction: column-reverse;
-        width: 100%;
+    #HostPop{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "aside"
+        "hostings"
+        ;
     }
 
     #hostings{
+        grid-area: hostings;
         width: 100%;
         background: none;
-        height: 1600px;
-    }
 
-    .test{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card_container{
-        width: 330px;
-        height: 200px;
+        display: grid;
+        grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        ;
     }
 
     #aside{
+        grid-area: aside;
         width: 100%;
-        margin: 20px 0 0 0px;
         border-radius: 0px;
     }
 
-    .card_aside{
-        margin: 20px 40px 0 0;
+}
+
+
+@media only screen and (max-width: 1024px)
+{
+    #HostPop{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "aside"
+        "hostings"
+        ;
     }
+
+    #hostings{
+        grid-area: hostings;
+        width: 100%;
+        background: none;
+    }
+
+    #aside{
+        grid-area: aside;
+        width: 100%;
+        border-radius: 20px;
+    }
+
 }
 /*Main*/
 
 
 /*Activities*/
-@media only screen and (max-width: 600px){
-#activities{
-    width: 100%;
-}
+@media only screen and (max-width: 768px){
+    #activities{
+        width: 100%;
+    }
 
-.activity{
-    display: flex;
-    flex-direction: column;
-}
-
-.port{
-    width: 330px;
-    height: 190px;
-    border-radius: 25px;
-    box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 30px 0 0 20px;
-    cursor: pointer;
-}
-
-.photo_1{
-    width: 330px;
-    height: 130px;
-    border-radius: 25px 25px 0 0;
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.fort{
-    width: 330px;
-    height: 190px;
-    border-radius: 25px;
-    box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 30px 0 0 20px;
-    cursor: pointer;
-}
-
-.photo_2{
-    width: 330px;
-    height: 130px;
-    border-radius: 25px 25px 0 0;
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.frioul{
-    width: 330px;
-    height: 190px;
-    border-radius: 25px;
-    box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 30px 0 0 20px;
-    cursor: pointer;
-}
-
-.photo_3{
-    width: 330px;
-    height: 130px;
-    border-radius: 25px 25px 0 0;
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.calanques{
-    width: 330px;
-    height: 190px;
-    border-radius: 25px;
-    box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 30px 0 0 20px;
-    cursor: pointer;
-}
-
-.photo_4{
-    width: 330px;
-    height: 130px;
-    border-radius: 25px 25px 0 0;
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.garde{
-    width: 330px;
-    height: 190px;
-    border-radius: 25px;
-    box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 30px 0 0 20px;
-    cursor: pointer;
-}
-
-.photo_5{
-    width: 330px;
-    height: 130px;
-    border-radius: 25px 25px 0 0;
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.parc{
-    width: 330px;
-    height: 190px;
-    border-radius: 25px;
-    box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 30px 0 0 20px;
-    cursor: pointer;
-}
-
-.photo_6{
-    width: 330px;
-    height: 130px;
-    border-radius: 25px 25px 0 0;
-    object-fit: cover;
-    width: 100%;
-    max-width: 100%;
-    max-height: 100%;
-}
 }
 /*Activities*/
 
 
 
 /*Footer*/
-@media only screen and (max-width: 600px){
-#footer{
-    width: 100%;
-    height: 600px;
-}
-
-.columnwrapper{
-    display: flex;
-    flex-direction: column;
-}
+@media only screen and (max-width: 1024px){
+    #footer{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .columnwrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
 }
 /*Footer*/

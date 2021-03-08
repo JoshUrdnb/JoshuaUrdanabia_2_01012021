@@ -5,14 +5,11 @@ padding: 0px;
 font-family: 'Raleway', sans-serif;
 }
 
-#container{
+#main{
     margin: auto;
-    max-width: 1350px;
+    max-width: 1440px;
     width: auto;
-}
-
-#main_section{
-    display: flex;
+    padding: 0 1.8rem 0 1.8rem;
 }
 
 article:hover{
@@ -28,19 +25,24 @@ article:hover{
 
 /***NAVIGATION***/
 .header{
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    grid-template-areas: "logo blank nav sign";
     align-items: center;
     margin: auto;
+    padding: 0 1.8rem 0 1.8rem;
+    max-width: 1440px;
 }
 
 .logo{
+    grid-area: logo;
     cursor: pointer;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 1.8rem;
 }
 
 .links{
+    grid-area: nav;
     display: flex;
     align-items: center;
 }
@@ -71,6 +73,7 @@ article:hover{
 }
 
 .sign_up{
+    grid-area: sign;
     color: #0065FC;
     text-decoration: none;
     font-weight: bold;
@@ -149,60 +152,65 @@ article:hover{
 .nav_filters{
     display: flex;
     align-items: center;
-    margin: 30px 0 0 0;
+    margin-top: 1.8rem;
+}
+
+.filters_h1{
+    margin-right: 1.5rem;
+    margin-top: 1rem;
 }
 
 .filters{
     display: flex;
-    margin: 0 0 0 30px;
+    flex-wrap: wrap;
 }
 
 #button_filter1{
     display: flex;
-    justify-content: space-between;
     border: 2px solid #d9d9d9;
     border-radius: 25px; 
     width: 180px;
     height: 50px;
     font-weight: bold;
     cursor: pointer;
-    margin: 0 20px 0 20px;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
   }
 
   #button_filter2{
     display: flex;
-    justify-content: space-between;
     border: 2px solid #d9d9d9;
     border-radius: 25px; 
     width: 150px;
     height: 50px;
     font-weight: bold;
     cursor: pointer;
-    margin: 0 20px 0 20px;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
   }
 
   #button_filter3{
     display: flex;
-    justify-content: space-between;
     border: 2px solid #d9d9d9;
     border-radius: 25px; 
     width: 180px;
     height: 50px;
     font-weight: bold;
     cursor: pointer;
-    margin: 0 20px 0 20px;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
   }
 
   #button_filter4{
     display: flex;
-    justify-content: space-between;
     border: 2px solid #d9d9d9;
     border-radius: 25px; 
     width: 230px;
     height: 50px;
     font-weight: bold;
     cursor: pointer;
-    margin: 0 20px 0 20px;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
   }
   
   .icon_filter{
@@ -261,34 +269,69 @@ article:hover{
 
 
 
+/*** Hostings and Populars Container***/
+#HostPop{
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+}
+/*** Hostings and Populars Container***/
+
+
+
 /*** HEBERGEMENTS ***/
 #hostings{
-    flex-direction: row;
-    width: 880px;
-    height: 625px;
-    margin: 20px 0 0 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    padding: 2rem;
     background-color: #f2f2f2;
     border-radius: 20px;
 }
 
 .HostingsTitle{
-    margin: 30px 0 0 40px;
+    grid-column: 1/4;
+    grid-row: 1/2;
 }
 
-.HostingsCardsContainer{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 0 0 40px;
+.one{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.two{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.three{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.four{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.five{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.six{
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
 
 .card_container{
-    width: 245px;
-    height: 200px;
     border-radius: 20px;
-    margin: 30px 30px 0 0;
     padding: 5px;
     box-shadow: 0px 2px 30px 0px lightgray;
     background-color: white;
+    align-content: stretch;
 }
 
 .HostingsCard{
@@ -297,7 +340,7 @@ article:hover{
 }
 
 .HostingsPicture{
-    width: 235px;
+    width: 100%;
     height: 112px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -318,11 +361,9 @@ article:hover{
     padding: 5px 0 0 0;
 }
 
-.ShowMoreContainer{
-    margin: 45px 0 0 45px;
-}
-
 .ShowMoreText{
+    grid-column: 1/4;
+    grid-row: 4/5;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -351,31 +392,26 @@ article:hover{
 
 /*** POPULARS ***/
 #aside{
-    width: 420px;
-    height: 625px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    row-gap: 2rem;
+    padding: 2rem;
     background-color: #f2f2f2;
     border-radius: 20px;
-    margin: 20px 0 0 40px;
 }
 
 .AsideTitleLine{
     display: flex;
     justify-content : space-between;
-    margin: 30px 40px 0 35px;
 }
 
-.section_aside{
-    flex-direction : column;
-}
-
-.card_aside{ 
-    width: 345px;
-    height: 145px;
+.card_aside{
     border-radius: 20px;
-    margin: 30px 35px 30px 35px;
     padding: 5px;
     box-shadow: 0px 2px 30px 0px lightgray;
     background: white;
+    align-items: stretch;
 }
 
 .card2{
@@ -408,20 +444,16 @@ article:hover{
 
 /*** ACTIVITIES ***/
 #activities{
-    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4rem 10rem 2rem 2rem 2rem 2rem 10rem;
+    column-gap: 2rem;
+    margin-top: 4rem;
 }
 
 .title_activities{
-    margin: 65px 0 25px 0;
-}
-
-.activity{
-    display: flex;
-    margin: 0 0 60px 0;
-}
-
-.column{
-    flex-direction : column;
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
 
 .act_h3{
@@ -430,117 +462,93 @@ article:hover{
 }
 
 .port{
-    width: 300px;
-    height: 445px;
+    grid-column: 1/2;
+    grid-row: 2/8;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 0px 0 0 0px;
     cursor: pointer;
 }
 
 .photo_1{
-    width: 300px;
-    height: 390px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    height: 85%;
 }
 
 .fort{
-    width: 300px;
-    height: 235px;
+    grid-column: 2/3;
+    grid-row: 2/6;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 0px 0 0 40px;
     cursor: pointer;
 }
 
 .photo_2{
-    width: 300px;
-    height: 175px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    height: 75%;
 }
 
 .frioul{
-    width: 300px;
-    height: 165px;
+    grid-column: 2/3;
+    grid-row: 7/8;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 45px 0 0 40px;
     cursor: pointer;
 }
 
 .photo_3{
-    width: 300px;
-    height: 110px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    height: 70%;
 }
 
 .calanques{
-    width: 300px;
-    height: 445px;
+    grid-column: 3/4;
+    grid-row: 2/8;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 0px 0 0 40px;
     cursor: pointer;
 }
 
 .photo_4{
-    width: 300px;
-    height: 390px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    height: 85%;
 }
 
 .garde{
-    width: 300px;
-    height: 195px;
+    grid-column: 4/5;
+    grid-row: 2/4;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 0px 0 0 40px;
     cursor: pointer;
 }
 
 .photo_5{
-    width: 300px;
-    height: 140px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    height: 75%;
 }
 
 .parc{
-    width: 300px;
-    height: 210px;
+    grid-column: 4/5;
+    grid-row: 5/8;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
-    margin: 42px 0 0 40px;
     cursor: pointer;
 }
 
 .photo_6{
-    width: 300px;
-    height: 153px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
-    max-width: 100%;
-    max-height: 100%;
+    height: 75%;
 }
 /*** ACTIVITIES ***/
 
@@ -551,7 +559,7 @@ article:hover{
     width: 100%;
     height: 250px;
     background: #f2f2f2;
-    margin: 30px 0 0 0;
+    margin-top: 4rem;
 }
 
 .columnwrapper{
@@ -559,7 +567,7 @@ article:hover{
     justify-content: space-around;
     margin: auto;
     width: 100%;
-    max-width: 1350px;
+    max-width: 1440px;
 }
 
 .linkswrapper{
@@ -575,6 +583,6 @@ article:hover{
 }
 
 .footerlinks:hover{
-    text-decoration: underline;
+    color: grey;
 }
 /*** FOOTER ***/
