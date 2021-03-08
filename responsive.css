@@ -1,202 +1,202 @@
 /*Container*/
 @media only screen and (min-width: 320px) and (max-width: 768px){
-    #container{
+#container{
+    width: 100%;
+}
+
+}
+/*Container*/
+
+
+
+/*Header*/
+@media only screen and (min-width: 320px) and (max-width: 1024px)
+{
+
+.header{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: 
+    "logo blank sign"
+    "nav nav nav"
+    ;
+    }
+
+.logo{
+    grid-area: logo;
+}
+
+.sign_up{
+    grid-area: sign;
+}
+
+.links{
+    grid-area: nav;
+}
+
+.hostings{
+    border-top: none;
+    border-bottom: 2px solid #F2F2F2;
+    width: 100%;
+  }
+
+.activities{
+    border-top: none;
+    border-bottom: 2px solid #F2F2F2;
+    width: 100%;
+  }
+
+.hostings:hover {
+    border-bottom-color: #0065FC;
+  }
+
+.activities:hover {
+    border-top: none;
+    border-bottom-color: #0065FC;
+  }
+}
+/*Header*/
+
+
+
+/*SearchForm*/
+@media only screen and (max-width: 768px)
+{
+
+.SearchForm{
+    width: 100%;
+    }
+
+.SearchText{
+    display: none;
+    }  
+
+.SearchSubmit{
+    background-color: #0065FC;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    margin: 0 0 0 -10px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .SearchMagnifyingIcon{
+    display: none;
+    }
+  }
+/*SearchForm*/
+
+
+
+ /*Filters*/
+@media only screen and (min-width: 320px) and (max-width: 1004px){
+    .nav_filters{
+        display: flex;
+        flex-direction : column;
+    }
+    
+    .filters_h1{
         width: 100%;
     }
-    
-    }
-    /*Container*/
-    
-    
-    
-    /*Header*/
-    @media only screen and (min-width: 320px) and (max-width: 1024px)
-    {
-    
-    .header{
+}
+/*Filters*/
+
+
+
+/*Main*/
+@media only screen and (max-width: 768px)
+{
+    #HostPop{
         display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-columns: auto 1fr auto;
         grid-template-areas: 
-        "logo blank sign"
-        "nav nav nav"
+        "aside"
+        "hostings"
         ;
-        }
-    
-    .logo{
-        grid-area: logo;
     }
-    
-    .sign_up{
-        grid-area: sign;
-    }
-    
-    .links{
-        grid-area: nav;
-    }
-    
-    .hostings{
-        border-top: none;
-        border-bottom: 2px solid #F2F2F2;
+
+    #hostings{
+        grid-area: hostings;
         width: 100%;
-      }
-    
-    .activities{
-        border-top: none;
-        border-bottom: 2px solid #F2F2F2;
+        background: none;
+
+        display: grid;
+        grid-template-areas: 
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        ;
+    }
+
+    #aside{
+        grid-area: aside;
         width: 100%;
-      }
-    
-    .hostings:hover {
-        border-bottom-color: #0065FC;
-      }
-    
-    .activities:hover {
-        border-top: none;
-        border-bottom-color: #0065FC;
-      }
+        border-radius: 0px;
     }
-    /*Header*/
-    
-    
-    
-    /*SearchForm*/
-    @media only screen and (max-width: 768px)
-    {
-    
-    .SearchForm{
+
+}
+
+
+@media only screen and (max-width: 1024px)
+{
+    #HostPop{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "aside"
+        "hostings"
+        ;
+    }
+
+    #hostings{
+        grid-area: hostings;
         width: 100%;
-        }
-    
-    .SearchText{
-        display: none;
-        }  
-    
-    .SearchSubmit{
-        background-color: #0065FC;
-        color: white;
-        font-size: 15px;
-        font-weight: 800;
-        width: 50px;
-        height: 50px;
-        border: none;
-        border-radius: 15px;
-        margin: 0 0 0 -10px;
-        }
+        background: none;
+    }
+
+    #aside{
+        grid-area: aside;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+}
+/*Main*/
+
+
+/*Activities*/
+@media only screen and (max-width: 768px){
+    #activities{
+        width: 100%;
+    }
+
+}
+/*Activities*/
+
+
+
+/*Footer*/
+@media only screen and (max-width: 1024px){
+    #footer{
+        width: 100%;
+        height: 100%;
     }
     
-    @media screen and (min-width: 768px){
-        .SearchMagnifyingIcon{
-        display: none;
-        }
-      }
-    /*SearchForm*/
-    
-    
-    
-     /*Filters*/
-    @media only screen and (min-width: 320px) and (max-width: 1004px){
-        .nav_filters{
-            display: flex;
-            flex-direction : column;
-        }
-        
-        .filters_h1{
-            width: 100%;
-        }
+    .columnwrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
     }
-    /*Filters*/
-    
-    
-    
-    /*Main*/
-    @media only screen and (max-width: 768px)
-    {
-        #HostPop{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas: 
-            "aside"
-            "hostings"
-            ;
-        }
-    
-        #hostings{
-            grid-area: hostings;
-            width: 100%;
-            background: none;
-    
-            display: grid;
-            grid-template-areas: 
-            "card1"
-            "card2"
-            "card3"
-            "card4"
-            "card5"
-            "card6"
-            ;
-        }
-    
-        #aside{
-            grid-area: aside;
-            width: 100%;
-            border-radius: 0px;
-        }
-    
-    }
-    
-    
-    @media only screen and (max-width: 1024px)
-    {
-        #HostPop{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            grid-template-areas: 
-            "aside"
-            "hostings"
-            ;
-        }
-    
-        #hostings{
-            grid-area: hostings;
-            width: 100%;
-            background: none;
-        }
-    
-        #aside{
-            grid-area: aside;
-            width: 100%;
-            border-radius: 20px;
-        }
-    
-    }
-    /*Main*/
-    
-    
-    /*Activities*/
-    @media only screen and (max-width: 768px){
-        #activities{
-            width: 100%;
-        }
-    
-    }
-    /*Activities*/
-    
-    
-    
-    /*Footer*/
-    @media only screen and (max-width: 1024px){
-        #footer{
-            width: 100%;
-            height: 100%;
-        }
-        
-        .columnwrapper{
-            display: flex;
-            flex-direction: column;
-            margin-left: 2rem;
-        }
-    }
-    /*Footer*/
+}
+/*Footer*/
