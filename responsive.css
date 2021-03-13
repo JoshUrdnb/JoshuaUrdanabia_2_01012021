@@ -1,190 +1,54 @@
 /*Container*/
 @media only screen and (min-width: 320px) and (max-width: 768px){
-#container{
-    width: 100%;
-}
-
-}
-/*Container*/
-
-
-
-/*Header*/
-@media only screen and (min-width: 320px) and (max-width: 1024px)
-{
-
-.header{
-    padding: 0;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: auto 1fr auto;
-    grid-template-areas: 
-    "logo blank sign"
-    "nav nav nav"
-    ;
-    }
-
-.logo{
-    grid-area: logo;
-    padding: 1rem;
-    margin-left: 2rem;
-}
-
-.sign_up{
-    grid-area: sign;
-    margin-right: 2rem;
-}
-
-.links{
-    grid-area: nav;
-}
-
-.hostings{
-    text-align: center;
-    border-top: none;
-    border-bottom: 2px solid #F2F2F2;
-    width: 100%;
-  }
-
-.activities{
-    text-align: center;
-    border-top: none;
-    border-bottom: 2px solid #F2F2F2;
-    width: 100%;
-  }
-
-.hostings:hover {
-    border-bottom-color: #0065FC;
-  }
-
-.activities:hover {
-    border-top: none;
-    border-bottom-color: #0065FC;
-  }
-}
-/*Header*/
-
-
-
-/*SearchForm*/
-@media only screen and (max-width: 767px)
-{
-
-.SearchForm{
-    width: 100%;
-    }
-
-.SearchText{
-    display: none;
-    }  
-
-.SearchSubmit{
-    background-color: #0065FC;
-    color: white;
-    font-size: 15px;
-    font-weight: 800;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 15px;
-    margin: 0 0 0 -10px;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .SearchMagnifyingIcon{
-    display: none;
-    }
-  }
-/*SearchForm*/
-
-
-
- /*Filters*/
-@media only screen and (min-width: 320px) and (max-width: 768px){
-    .nav_filters{
-        display: flex;
-        flex-direction : column;
+    #container{
+        width: 100%;
     }
     
-    .filters_h1{
-        align-self: flex-start;
     }
-}
-/*Filters*/
-
-
-
-/*Main*/
-@media only screen and (min-width: 320px) and (max-width: 1366px)
-{
-
-    #HostPop{
-        display: grid;
-        row-gap: 2rem;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "aside"
-        "hostings"
-        ;
-    }
-
-    #hostings{
-        grid-area: hostings;
-        width: 100%;
-    }
-
-    #aside{
-        grid-area: aside;
-        width: 100%;
-    }
-}
-/*Main*/
-
-@media only screen and (max-width: 768px){
-    #hostings{
-     display: grid;
-        grid-template-columns: 1fr;
-    }
-}
-
-
-
-/*Activities*/
-@media only screen and (max-width: 768px){
-    #activities{
-        width: 100%;
-    }
-}
-/*Activities*/
-
-
-
-/*Footer*/
-@media only screen and (max-width: 1024px){
-    #footer{
-        width: 100%;
-        height: 100%;
-    }
+    /*Container*/
     
-    .columnwrapper{
-        display: flex;
-        flex-direction: column;
-        margin-left: 2rem;
+    
+    
+    /*Header*/
+
+    /*Header*/
+    
+    
+    
+    /*SearchForm*/
+
+    /*SearchForm*/
+    
+    
+    
+     /*Filters*/
+
+    /*Filters*/
+    
+    
+    
+    /*Main*/
+
+    /*Main*/
+    
+
+    
+    
+    
+    /*Activities*
+    @media only screen and (max-width: 768px){
+        #activities{
+            width: 100%;
+        }
     }
-}
-/*Footer*/
+    /*Activities*/
+    
+    
+    
+    /*Footer*/
 
-
-
-@media only screen and (min-width: 1024px){
-    .HostingsTitle{
-        grid-column: 1/4;
-        grid-row: 1/2;
-    }
-
-    .ShowMoreText{
-        grid-column: 1/4;
-        grid-row: 4/5;
-    }
-}
+    /*Footer*/
+    
+    
+    
+  

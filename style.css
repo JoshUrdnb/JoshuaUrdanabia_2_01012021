@@ -1,28 +1,27 @@
 *{
-box-sizing: border-box;
-margin: 0px;
-padding: 0px;
-font-family: 'Raleway', sans-serif;
-}
-
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Raleway', sans-serif;
+    }
+    
 #main{
     margin: auto;
     max-width: 1440px;
     width: auto;
-    padding: 0 1.8rem 0 1.8rem;
 }
-
+    
 article:hover{
     transition: transform .2s;
     transform: scale(1.1);
 }
-
+    
 .euro{
     font-weight: bold;
 }
-
-
-
+    
+    
+    
 /***NAVIGATION***/
 .header{
     display: grid;
@@ -33,45 +32,45 @@ article:hover{
     padding: 0 1.8rem 0 1.8rem;
     max-width: 1440px;
 }
-
+    
 .logo{
     grid-area: logo;
     cursor: pointer;
     margin-right: auto;
     margin-top: 1.8rem;
 }
-
+    
 .links{
     grid-area: nav;
     display: flex;
     align-items: center;
 }
-
+    
 .links a{
     text-decoration: none;
 }
-
+    
 .hostings{
     border-top: 2px solid #0065FC;
     padding: 50px 25px 30px 25px;
     color: #0065FC;
 }
-
+    
 .hostings a{
     color: #0065FC;
 }
-
+    
 .activities{
     padding: 50px 25px 30px 25px;
     border-top: 2px transparent solid;
     color: black;
 }
-
+    
 .activities:hover {
     border-top: 2px solid #0065FC;
     color: #0065FC;
 }
-
+    
 .sign_up{
     grid-area: sign;
     color: #0065FC;
@@ -79,34 +78,88 @@ article:hover{
     font-weight: bold;
     padding: 50px 25px 30px 25px;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 1024px){
+    
+    .header{
+        padding: 0;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: auto 1fr auto;
+        grid-template-areas: 
+        "logo blank sign"
+        "nav nav nav"
+        ;
+    }
+    
+    .logo{
+        grid-area: logo;
+        padding: 1rem;
+        margin-left: 2rem;
+    }
+    
+    .sign_up{
+        grid-area: sign;
+        margin-right: 2rem;
+    }
+    
+    .links{
+        grid-area: nav;
+    }
+    
+    .hostings{
+        text-align: center;
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        width: 100%;
+      }
+    
+    .activities{
+        text-align: center;
+        border-top: none;
+        border-bottom: 2px solid #F2F2F2;
+        width: 100%;
+      }
+    
+    .hostings:hover {
+        border-bottom-color: #0065FC;
+      }
+    
+    .activities:hover {
+        border-top: none;
+        border-bottom-color: #0065FC;
+      }
+}
 /***NAVIGATION***/
-
-
-
+    
+    
+    
 /*** TITRE ***/
 .filters__h1{
     text-align: left;
 }
-
+    
 .section_header{
     justify-content: flex-start;
-    padding: 50px 0 0 0;
-    margin: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
 }
-
+    
 .title_size{
     font-size: 24px;
 }
 /*** TITRE ***/
-
-
-
+    
+    
+    
 /*** SEARCH ***/
 .SearchForm{
     display: flex;
     padding: 20px 0 0 0;
+    padding: 2rem;
 }
-
+    
 .SearchMapIcon{
     width: 50px;
     height: 50px;
@@ -114,57 +167,94 @@ article:hover{
     border-radius: 15px 0 0 15px;
     background-color: #f2f2f2;
 }
-
-.FormInput {
+    
+.FormInput{
     width: 240px;
     border: 1px solid #f2f2f2;
     font-size: 18px;
     font-weight: bold;
-    padding: 0 0 0 10px;
+    padding-left: 10px;
 }
-
+    
 ::placeholder{
     color: black; /* Chrome, Firefox, Opera, Safari 10.1+ */
     opacity: 1; /* Firefox */
 }
-
+    
 .POI{
     padding: 15px 20px;
 }
-
+    
 .SearchSubmit{
     width: 120px;
     border-radius: 0 15px 15px 0;
     background-color: #0065FC;
     border: none;
 }
-
+    
 .SearchText{
     font-weight: 800;
     font-size: 15px;
     color: #FFF;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 374px){
+    .FormInput{
+        width: 170px;
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    
+    .SearchForm{
+        width: 100%;
+    }
+    
+    .SearchText{
+        display: none;
+    }  
+    
+    .SearchSubmit{
+        background-color: #0065FC;
+        color: white;
+        font-size: 15px;
+        font-weight: 800;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 15px;
+        margin: 0 0 0 -10px;
+    }
+}
+    
+@media screen and (min-width: 768px){
+    .SearchMagnifyingIcon{
+    display: none;
+    }
+}
 /*** SEARCH ***/
-
-
-
+    
+    
+    
 /*** FILTRES ***/
 .nav_filters{
     display: flex;
     align-items: center;
-    margin-top: 1.8rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
-
+    
 .filters_h1{
     margin-right: 1.5rem;
     margin-top: 1rem;
 }
-
+    
 .filters{
     display: flex;
     flex-wrap: wrap;
 }
-
+    
 #button_filter1{
     display: flex;
     border: 2px solid #d9d9d9;
@@ -175,9 +265,9 @@ article:hover{
     cursor: pointer;
     margin-right: 1.5rem;
     margin-top: 1rem;
-  }
-
-  #button_filter2{
+}
+    
+#button_filter2{
     display: flex;
     border: 2px solid #d9d9d9;
     border-radius: 25px; 
@@ -187,9 +277,9 @@ article:hover{
     cursor: pointer;
     margin-right: 1.5rem;
     margin-top: 1rem;
-  }
-
-  #button_filter3{
+}
+    
+#button_filter3{
     display: flex;
     border: 2px solid #d9d9d9;
     border-radius: 25px; 
@@ -199,9 +289,9 @@ article:hover{
     cursor: pointer;
     margin-right: 1.5rem;
     margin-top: 1rem;
-  }
-
-  #button_filter4{
+}
+    
+#button_filter4{
     display: flex;
     border: 2px solid #d9d9d9;
     border-radius: 25px; 
@@ -211,9 +301,9 @@ article:hover{
     cursor: pointer;
     margin-right: 1.5rem;
     margin-top: 1rem;
-  }
-  
-  .icon_filter{
+}
+      
+.icon_filter{
     width : 100%;
     background-color: #deebff;
     margin: -2px 0 0 -2px;
@@ -224,61 +314,108 @@ article:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  .button{
+}
+    
+.button{
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0 30px 0 0;
-  }
+    padding: 0 0 0 10px;
+}
+    
+.FiltersHoverEffect:hover{
+    transition: transform .3s;
+    transform: scale(1.2);
+}
 
-  .FiltersHoverEffect:hover{
-      transition: transform .3s;
-      transform: scale(1.2);
-  }
+
+@media only screen and (min-width: 320px) and (max-width: 1010px){
+    .nav_filters{
+        display: flex;
+        flex-direction : column;
+    }
+        
+    .filters_h1{
+        align-self: flex-start;
+    }
+}
 /*** FILTRES ***/
-
-
-
+    
+    
+    
 /*** INFOS ***/
 .information{
-    justify-content: flex-start;
-    margin: auto;
-}
-
-.information{
-    display: flex;
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: "icon text";
     align-items: center;
-    margin: auto;
-    padding: 40px 0 10px 0;
+    margin: 2rem;
 }
-
+    
 .icon{
+    grid-area: icon;
     color: #0065FC;
     height: 35px;
     width: 35px;
     border: 1px solid #d9d9d9;
     border-radius: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1rem;
-    display: flex;
+}
+
+.TextInformation{
+    grid-area: text;
 }
 /*** INFOS ***/
-
-
-
+    
+    
+    
 /*** Hostings and Populars Container***/
 #HostPop{
     display: grid;
     column-gap: 2rem;
     grid-template-columns: 2fr 1fr;
+    margin: 2rem;
+}
+
+@media only screen and (min-width: 768px){
+    .HostingsTitle{
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    
+    .ShowMoreText{
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1366px){
+    #HostPop{
+        display: grid;
+        row-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "aside"
+        "hostings"
+        ;
+    }
+    
+    #hostings{
+        grid-area: hostings;
+        width: 100%;
+    }
+    
+    #aside{
+        grid-area: aside;
+        width: 100%;
+    }
 }
 /*** Hostings and Populars Container***/
-
-
-
+    
+    
+    
 /*** HEBERGEMENTS ***/
 #hostings{
     display: grid;
@@ -291,6 +428,13 @@ article:hover{
     border-radius: 20px;
 }
 
+@media only screen and (max-width: 767px){
+    #hostings{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
 .card_container{
     border-radius: 20px;
     padding: 0.5rem;
@@ -298,12 +442,12 @@ article:hover{
     background-color: white;
     align-content: stretch;
 }
-
+    
 .HostingsCard{
     text-decoration: none;
     color: black;
 }
-
+    
 .HostingsPicture{
     width: 100%;
     height: 112px;
@@ -313,47 +457,51 @@ article:hover{
     max-width: 100%;
     max-height: 100%;
 }
-
+    
 .HostingsCardDescription{
     padding: 5px 0 0 10px;
 }
-
+    
 .HostingsCardTitle{
     font-size: 1rem;
 }
-
+    
 .HostingsCardText{
     padding: 5px 0 0 0;
 }
-
+    
 .ShowMoreText{
-
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
     color: black;
 }
 /*** HEBERGEMENTS ***/
-
-
-
+    
+    
+    
 /*** Stars ***/
 .Stars{
     display: flex;
     padding: 5px 0 0 0;
 }
 
+.StarsAside{
+    display: flex;
+    margin-top: 1rem;
+}
+    
 .BlueStars{
     color: #0065FC;
 }
-
+    
 .GreyStars{
     color: #d9d9d9;
 }
 /*** Stars ***/
-
-
-
+    
+    
+    
 /*** POPULARS ***/
 #aside{
     display: grid;
@@ -365,11 +513,23 @@ article:hover{
     border-radius: 20px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    #aside{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr 1fr 1fr;
+        row-gap: 2rem;
+        padding: 4rem;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+    }
+}
+    
 .AsideTitleLine{
     display: flex;
     justify-content : space-between;
 }
-
+    
 .card_aside{
     border-radius: 20px;
     padding: 0.5rem;
@@ -377,23 +537,23 @@ article:hover{
     background: white;
     align-items: stretch;
 }
-
+    
 .card2{
     display: flex;
     text-decoration: none;
     color: black;
 }
-
+    
 .order{
     display: flex;
     flex-direction : column;
     padding: 10px 0 0 20px;
 }
-
+    
 .PopularCardTitle{
     font-size: 1rem;
 }
-
+    
 .photo_aside{
     width: 125px;
     height: 135px;
@@ -402,122 +562,239 @@ article:hover{
     max-width: 100%;
     max-height: 100%;
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px){
+
+    #aside{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 1rem;
+        row-gap: 2rem;
+        padding: 2rem;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+    }
+
+    .AsideTitleLine{
+        grid-column: 1/4;
+    }    
+
+}
 /*** POPULARS ***/
+  
 
 
+/*** Hostings and Populars Container***/
+@media only screen and (min-width: 320px) and (max-width: 667px){
+    #HostPop{
+        margin: 0;
+        display: grid;
+        row-gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "aside"
+        "hostings"
+        ;
+    }
+    
+    #hostings{
+        grid-area: hostings;
+        background: none;
+        width: 100%;
+        padding: 2rem;
+        row-gap: 1rem;
+    }
+    
+    #aside{
+        grid-area: aside;
+        width: 100%;
+        padding: 0.5rem;
+        row-gap: 0.5rem;
+        border-radius: 0px;
+    }
+}
+/*** Hostings and Populars Container***/
 
+
+    
 /*** ACTIVITIES ***/
-@media only screen and (min-width: 1024px){
-#activities{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 4rem 10rem 2rem 2rem 2rem 2rem 10rem;
-    column-gap: 2rem;
-    margin-top: 4rem;
-}
-}
-
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 767px){
     #activities{
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 4rem 10rem 2rem 2rem 2rem 2rem 10rem;
+        column-gap: 2rem;
+        margin-top: 4rem;
+        margin: 2rem;
+    }
+    .title_activities{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .port{
+        grid-column: 1/2;
+        grid-row: 2/8;
+    }
+    
+    .fort{
+        grid-column: 2/3;
+        grid-row: 2/6;
+    }
+    
+    .frioul{
+        grid-column: 2/3;
+        grid-row: 7/8;
+    }
+    
+    .calanques{
+        grid-column: 3/4;
+        grid-row: 2/8;
+    }
+    
+    .garde{
+        grid-column: 4/5;
+        grid-row: 2/4;
+    }
+    
+    .parc{
+        grid-column: 4/5;
+        grid-row: 5/8;
+    }
+}
+    
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    #activities{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
+        row-gap: 2rem;
+        padding: 2rem;
     }
 }
 
-.title_activities{
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
+@media only screen and (min-width: 768px) and (max-width: 1366px){
+    #activities{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 15rem 15rem 15rem;
+        row-gap: 2rem;
+        padding: 2rem;
+    }
 
+    .title_activities{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    
+    .port{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    
+    .fort{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    
+    .frioul{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    
+    .calanques{
+        grid-column: 2/3;
+        grid-row: 3/4;
+    }
+    
+    .garde{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    
+    .parc{
+        grid-column: 2/3;
+        grid-row: 4/5;
+    }
+}
+    
 .act_h3{
     padding: 15px 0 25px 20px;
     font-size: medium;
 }
-
+    
 .port{
-    grid-column: 1/2;
-    grid-row: 2/8;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-
+    
 .photo_1{
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     height: 85%;
 }
-
+    
 .fort{
-    grid-column: 2/3;
-    grid-row: 2/6;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-
+    
 .photo_2{
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     height: 75%;
 }
-
+    
 .frioul{
-    grid-column: 2/3;
-    grid-row: 7/8;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-
+    
 .photo_3{
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     height: 70%;
 }
-
+    
 .calanques{
-    grid-column: 3/4;
-    grid-row: 2/8;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-
+    
 .photo_4{
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     height: 85%;
 }
-
+    
 .garde{
-    grid-column: 4/5;
-    grid-row: 2/4;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-
+    
 .photo_5{
     border-radius: 20px 20px 0 0;
     object-fit: cover;
     width: 100%;
     height: 75%;
 }
-
+    
 .parc{
-    grid-column: 4/5;
-    grid-row: 5/8;
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-
+    
 .photo_6{
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -525,9 +802,9 @@ article:hover{
     height: 75%;
 }
 /*** ACTIVITIES ***/
-
-
-
+    
+    
+    
 /*** FOOTER ***/
 #footer{
     width: 100%;
@@ -535,7 +812,7 @@ article:hover{
     background: #f2f2f2;
     margin-top: 4rem;
 }
-
+    
 .columnwrapper{
     display: flex;
     justify-content: space-around;
@@ -543,20 +820,34 @@ article:hover{
     width: 100%;
     max-width: 1440px;
 }
-
+    
 .linkswrapper{
     display: flex;
     flex-direction : column;
-    margin: 50px 220px 0 0;
+    margin: 1rem;
 }
-
+    
 .footerlinks{
     text-decoration: none;
     color: black;
     padding: 15px 0 0 0;
 }
-
+    
 .footerlinks:hover{
     color: grey;
 }
-/*** FOOTER ***/
+
+@media only screen and (max-width: 767px){
+    #footer{
+        width: 100%;
+        height: 100%;
+    }
+        
+    .columnwrapper{
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-bottom: 2rem;
+    }
+}
+/*** FOOTER ***/    
