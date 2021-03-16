@@ -163,7 +163,7 @@ article:hover{
 .SearchMapIcon{
     width: 50px;
     height: 50px;
-    border: 1px solid #f2f2f2;
+    border: 1px solid transparent;
     border-radius: 15px 0 0 15px;
     background-color: #f2f2f2;
 }
@@ -631,13 +631,17 @@ article:hover{
         row-gap: 0.5rem;
         border-radius: 0px;
     }
+
+    .order{
+        width: 160px;
+    }
 }
 /*** Hostings and Populars Container***/
 
 
     
 /*** ACTIVITIES ***/
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: 1367px){
     #activities{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -646,6 +650,7 @@ article:hover{
         margin-top: 4rem;
         margin: 2rem;
     }
+
     .title_activities{
         grid-column: 1/2;
         grid-row: 1/2;
@@ -680,6 +685,48 @@ article:hover{
         grid-column: 4/5;
         grid-row: 5/8;
     }
+        
+    #photo_1{
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 89%;
+    }
+        
+    #photo_2{
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 80%;
+    }
+        
+    #photo_3{
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 70%;
+    }
+        
+    #photo_4{
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 89%;
+    }
+          
+    #photo_5{
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 75%;
+    }
+        
+    #photo_6{
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 79%;
+    }
 }
     
 @media only screen and (min-width: 320px) and (max-width: 767px){
@@ -690,6 +737,13 @@ article:hover{
         row-gap: 2rem;
         padding: 2rem;
     }
+
+    #photo_1, #photo_2, #photo_3, #photo_4, #photo_5, #photo_6{
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 75%;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1366px){
@@ -697,8 +751,16 @@ article:hover{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto 15rem 15rem 15rem;
+        column-gap: 2rem;
         row-gap: 2rem;
         padding: 2rem;
+    }
+
+    #photo_1, #photo_2, #photo_3, #photo_4, #photo_5, #photo_6{
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        width: 100%;
+        height: 80%;
     }
 
     .title_activities{
@@ -736,88 +798,47 @@ article:hover{
         grid-row: 4/5;
     }
 }
-    
+
 .act_h3{
-    padding: 15px 0 25px 20px;
+    padding: 0.95rem 0 1.55rem 1.25rem;
     font-size: medium;
 }
-    
+
 .port{
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-    
-.photo_1{
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    width: 100%;
-    height: 85%;
-}
-    
+
 .fort{
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-    
-.photo_2{
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    width: 100%;
-    height: 75%;
-}
-    
+        
 .frioul{
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-    
-.photo_3{
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    width: 100%;
-    height: 70%;
-}
-    
+        
 .calanques{
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-    
-.photo_4{
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    width: 100%;
-    height: 85%;
-}
-    
+
 .garde{
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
 }
-    
-.photo_5{
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    width: 100%;
-    height: 75%;
-}
-    
+  
+
 .parc{
     border-radius: 20px;
     box-shadow: 0px 2px 30px 0px lightgray;
     cursor: pointer;
-}
-    
-.photo_6{
-    border-radius: 20px 20px 0 0;
-    object-fit: cover;
-    width: 100%;
-    height: 75%;
 }
 /*** ACTIVITIES ***/
     
