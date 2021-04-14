@@ -95,12 +95,12 @@ article:hover{
     .logo{
         grid-area: logo;
         padding: 1rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
     }
     
     .sign_up{
         grid-area: sign;
-        margin-right: 2rem;
+        margin-right: 1rem;
     }
     
     .links{
