@@ -407,6 +407,39 @@
         width: 100%;
     }
 }
+
+@media only screen and (min-width: 320px) and (max-width: 667px){
+    #HostPop{
+        margin: 0;
+        display: grid;
+        row-gap: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "aside"
+        "hostings"
+        ;
+    }
+    
+    #hostings{
+        grid-area: hostings;
+        background: none;
+        width: 100%;
+        padding: 2rem;
+        row-gap: 1rem;
+    }
+    
+    #aside{
+        grid-area: aside;
+        width: 100%;
+        padding: 0.5rem;
+        row-gap: 0.5rem;
+        border-radius: 0px;
+    }
+
+    .order{
+        width: 160px;
+    }
+}
 /*** Hostings and Populars Container***/
     
     
@@ -595,43 +628,6 @@
 
 }
 /*** POPULARS ***/
-  
-
-
-/*** Hostings and Populars Container***/
-@media only screen and (min-width: 320px) and (max-width: 667px){
-    #HostPop{
-        margin: 0;
-        display: grid;
-        row-gap: 1rem;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "aside"
-        "hostings"
-        ;
-    }
-    
-    #hostings{
-        grid-area: hostings;
-        background: none;
-        width: 100%;
-        padding: 2rem;
-        row-gap: 1rem;
-    }
-    
-    #aside{
-        grid-area: aside;
-        width: 100%;
-        padding: 0.5rem;
-        row-gap: 0.5rem;
-        border-radius: 0px;
-    }
-
-    .order{
-        width: 160px;
-    }
-}
-/*** Hostings and Populars Container***/
 
 
     
